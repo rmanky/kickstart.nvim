@@ -2,4 +2,11 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  { -- Review undo history with a tree view
+    'mbbill/undotree',
+    keys = {
+      { '<leader>u', ':UndotreeToggle<CR>', desc = 'Toggle Undotree' },
+    },
+  },
+}
